@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusFlow - Your personal productivity dashboard">
+    <title>FocusFlow | Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span>FocusFlow</span>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">B</div>
+                <div>
+                    <h3>Welcome back!</h3>
+                    <p>Let's be productive</p>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <p class="nav-heading">MENU</p>
+
+                <a href="#" class="nav-link active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>✓</span> My Tasks
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>▣</span> Calendar
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>◷</span> Schedule
+                </a>
+
+                <p class="nav-heading second-heading">PERSONAL</p>
+
+                <a href="#" class="nav-link">
+                    <span>☆</span> My Goals
+                </a>
+
+                <a href="#" class="nav-link">
+                    <span>⚙</span> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="upgrade-card">
+                    <div class="upgrade-icon">✧</div>
+                    <h3>Stay focused!</h3>
+                    <p>Small steps every day lead to big results.</p>
+                </div>
+
+                <p class="sidebar-footer">© 2026 FocusFlow</p>
+            </div>
+        </aside>
+        
+         <!-- Main Content -->
+        <main class="main-content">
+        
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#tasks">My Tasks</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#goals">Goals</a>
+    <a href="#settings">Settings</a>
+</nav>
+
+
+            <!-- Top Header -->
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Pages / Dashboard</p>
+                    <h2>My Dashboard</h2>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="notification">♧</div>
+                    <div class="user-avatar">B</div>
+                </div>
+            </header>
+
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div>
+                    <p class="welcome-label">YOUR PRODUCTIVITY SPACE</p>
+                    <h1>Good morning, Bhoomika! <span>☀</span></h1>
+                    <p class="welcome-text">
+                        Every small step brings you closer to your goals.
+                        Let's make today count!
+                    </p>
+                </div>
+
+                <div class="date-card">
+                    <span>📅</span>
+                    <div>
+                        <strong>Friday, October 30</strong>
+                        <p>Your day, your progress</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Tasks</span>
+                        <span class="stat-icon purple">▤</span>
+                    </div>
+                    <h2>24</h2>
+                    <p><strong>↑ 12%</strong> from last week</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Completed</span>
+                        <span class="stat-icon green">✓</span>
+                    </div>
+                    <h2>16</h2>
+                    <p><strong>↑ 8%</strong> from last week</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>In Progress</span>
+                        <span class="stat-icon orange">◷</span>
+                    </div>
+                    <h2>05</h2>
+                    <p>Tasks being worked on</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Overdue</span>
+                        <span class="stat-icon red">!</span>
+                    </div>
+                    <h2>03</h2>
+                    <p>Needs your attention</p>
+                </article>
+
+            </section>
+
+
+            <!-- Main Dashboard Grid -->
+            <div class="content-grid">
+
+                <!-- Tasks -->
+                <section class="panel tasks-panel">
+
+                    <div class="section-heading">
+                        <div>
+                            <h2>Today's Tasks</h2>
+                            <p>Keep moving forward, one task at a time.</p>
+                        </div>
+                        <a href="#" class="view-all">View all →</a>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-check completed">✓</div>
+                        <div class="task-info">
+                            <h3>Complete project documentation</h3>
+                            <p>Personal Project · 09:00 AM</p>
+                        </div>
+                        <span class="priority low">Low</span>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-check"></div>
+                        <div class="task-info">
+                            <h3>Practice Python programming</h3>
+                            <p>Learning · 11:00 AM</p>
+                        </div>
+                        <span class="priority high">High</span>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-check"></div>
+                        <div class="task-info">
+                            <h3>Work on internship assignment</h3>
+                            <p>Internship · 02:00 PM</p>
+                        </div>
+                        <span class="priority high">High</span>
+                    </div>
+
+                    <div class="task-item">
+                        <div class="task-check"></div>
+                        <div class="task-info">
+                            <h3>Read a new technical article</h3>
+                            <p>Learning · 05:00 PM</p>
+                        </div>
+                        <span class="priority medium">Medium</span>
+                    </div>
+
+                    <div class="task-item last-task">
+                        <div class="task-check"></div>
+                        <div class="task-info">
+                            <h3>Plan tomorrow's activities</h3>
+                            <p>Personal · 07:00 PM</p>
+                        </div>
+                        <span class="priority low">Low</span>
+                    </div>
+
+                </section>
+
+
+                <!-- Right Column -->
+                <div class="right-column">
+
+                    <section class="panel progress-panel">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Daily Progress</h2>
+                                <p>Your daily achievement</p>
+                            </div>
+                        </div>
+
+                        <div class="progress-circle">
+                            <div class="progress-inner">
+                                <h2>68%</h2>
+                                <p>Completed</p>
+                            </div>
+                        </div>
+
+                        <p class="progress-message">
+                            Great work! You're making good progress today.
+                        </p>
+
+                        <div class="progress-details">
+                            <span>Completed tasks</span>
+                            <strong>16 / 24</strong>
+                        </div>
+                    </section>
+
+
+                    <section class="panel schedule-panel">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Upcoming Schedule</h2>
+                                <p>What's coming next?</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">11:00</div>
+                            <div class="schedule-line purple-line"></div>
+                            <div>
+                                <h3>Python Practice</h3>
+                                <p>Learning session</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">14:00</div>
+                            <div class="schedule-line orange-line"></div>
+                            <div>
+                                <h3>Internship Work</h3>
+                                <p>Project development</p>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item">
+                            <div class="schedule-time">17:00</div>
+                            <div class="schedule-line green-line"></div>
+                            <div>
+                                <h3>Reading Time</h3>
+                                <p>Personal learning</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+
+            <!-- Bottom Section -->
+            <section class="panel weekly-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Weekly Overview</h2>
+                        <p>Your productivity at a glance</p>
+                    </div>
+                    <span class="week-label">This Week</span>
+                </div>
+
+                <div class="weekly-progress">
+                    <div class="day-progress">
+                        <span>Mon</span>
+                        <div class="bar"><div style="height: 65%"></div></div>
+                        <small>65%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Tue</span>
+                        <div class="bar"><div style="height: 85%"></div></div>
+                        <small>85%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Wed</span>
+                        <div class="bar"><div style="height: 50%"></div></div>
+                        <small>50%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Thu</span>
+                        <div class="bar"><div style="height: 75%"></div></div>
+                        <small>75%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Fri</span>
+                        <div class="bar"><div style="height: 90%"></div></div>
+                        <small>90%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Sat</span>
+                        <div class="bar"><div style="height: 35%"></div></div>
+                        <small>35%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Sun</span>
+                        <div class="bar"><div style="height: 20%"></div></div>
+                        <small>20%</small>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                Made with care by FocusFlow. Stay productive, stay inspired.
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
