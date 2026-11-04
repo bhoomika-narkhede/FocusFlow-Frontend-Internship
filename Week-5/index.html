@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusFlow - Your personal productivity application">
+    <title>FocusFlow | Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span>FocusFlow</span>
+            </div>
+
+            <div class="profile">
+                <div class="avatar" id="userAvatar">B</div>
+                <div>
+                    <h3 id="sidebarUserName">Welcome back!</h3>
+                    <p>Let's be productive</p>
+                </div>
+            </div>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <p class="nav-heading">MENU</p>
+
+                <a href="#dashboard" class="nav-link active" data-route="dashboard" aria-current="page">
+                    ▦ <span>Dashboard</span>
+                </a>
+
+                <a href="#tasks" class="nav-link" data-route="tasks">
+                    ✓ <span>My Tasks</span>
+                </a>
+
+                <a href="#calendar" class="nav-link" data-route="calendar">
+                    ▣ <span>Calendar</span>
+                </a>
+
+                <p class="nav-heading">PERSONAL</p>
+
+                <a href="#goals" class="nav-link" data-route="goals">
+                    ☆ <span>My Goals</span>
+                </a>
+
+                <a href="#settings" class="nav-link" data-route="settings">
+                    ⚙ <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="upgrade-card">
+                    <h3>Stay focused!</h3>
+                    <p>Small steps every day lead to big results.</p>
+                </div>
+                <p class="sidebar-footer">© 2026 FocusFlow</p>
+            </div>
+        </aside>
+
+        <!-- Main application area -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Pages / <span id="currentPage">Dashboard</span></p>
+                    <h1 id="pageTitle">My Dashboard</h1>
+                </div>
+
+                <div class="topbar-right">
+                    <span id="currentDate"></span>
+                    <div class="user-avatar" id="topAvatar" aria-hidden="true">B</div>
+                </div>
+            </header>
+
+            <!-- JavaScript dynamically renders page content here -->
+            <section id="appContent" aria-live="polite" tabindex="-1">
+                <div class="loading-message">Loading FocusFlow...</div>
+            </section>
+
+            <footer class="footer">
+                Plan with purpose.Make Everyday count.
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
