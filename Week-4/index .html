@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FocusFlow - Your personal productivity dashboard">
+    <title>FocusFlow | Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        
+<!-- Sidebar -->
+<aside class="sidebar" aria-label="Main sidebar">
+
+    <div class="logo">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <span>FocusFlow</span>
+    </div>
+
+    <div class="profile">
+        <div class="avatar" id="userAvatar" aria-hidden="true">B</div>
+        <div>
+            <h3>Welcome back!</h3>
+            <p>Let's be productive</p>
+        </div>
+    </div>
+
+    <nav class="navigation" aria-label="Main navigation">
+        <p class="nav-heading">MENU</p>
+
+        <a href="#" class="nav-link active" aria-current="page">
+            <span aria-hidden="true">▦</span> Dashboard
+        </a>
+
+        <a href="#tasks" class="nav-link">
+            <span aria-hidden="true">✓</span> My Tasks
+        </a>
+
+        <a href="#calendar" class="nav-link">
+            <span aria-hidden="true">▣</span> Calendar
+        </a>
+
+        <a href="#schedule" class="nav-link">
+            <span aria-hidden="true">◷</span> Schedule
+        </a>
+
+        <p class="nav-heading second-heading">PERSONAL</p>
+
+        <a href="#goals" class="nav-link">
+            <span aria-hidden="true">☆</span> My Goals
+        </a>
+
+        <a href="#settings" class="nav-link">
+            <span aria-hidden="true">⚙</span> Settings
+        </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="upgrade-card">
+            <div class="upgrade-icon" aria-hidden="true">✧</div>
+            <h3>Stay focused!</h3>
+            <p>Small steps every day lead to big results.</p>
+        </div>
+
+        <p class="sidebar-footer">© 2026 FocusFlow</p>
+    </div>
+
+</aside>
+
+        
+         <!-- Main Content -->
+        <main class="main-content" id="dashboard">
+        
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#tasks">My Tasks</a>
+    <a href="#calendar">Calendar</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#goals">Goals</a>
+    <a href="#settings">Settings</a>
+</nav>
+
+
+            <!-- Top Header -->
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Pages / Dashboard</p>
+                    <h2>My Dashboard</h2>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="notification" aria-hidden="true">♧</div>
+                    <div class="user-avatar" id="topUserAvatar" aria-hidden="true">B</div>
+                </div>
+            </header>
+
+
+            
+<!-- Welcome Section -->
+<section class="welcome-section">
+    <div>
+        <p class="welcome-label">YOUR PRODUCTIVITY SPACE</p>
+        <h1>Good morning, <span id="userName">User</span>!   <span aria-hidden="true">☀</span></h1>
+        <p class="welcome-text">
+            Every small step brings you closer to your goals.
+            Let's make today count!
+        </p>
+    </div>
+
+    <div class="date-card">
+        <span aria-hidden="true">📅</span>
+        <div>
+            <strong id="currentDate"></strong>
+            <p>Your day, your progress</p>
+        </div>
+    </div>
+</section>
+
+
+
+            <!-- Statistics Cards -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Tasks</span>
+                        <span class="stat-icon purple">▤</span>
+                    </div>
+                    <h2 id="totalTasks">5</h2>
+                    <p><strong>↑ 12%</strong> from last week</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Completed</span>
+                        <span class="stat-icon green">✓</span>
+                    </div>
+                    <h2 id="completedTasks">1</h2>
+                    <p><strong>↑ 8%</strong> from last week</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>In Progress</span>
+                        <span class="stat-icon orange">◷</span>
+                    </div>
+                    <h2 id="inProgressTasks">4</h2>
+                    <p>Tasks being worked on</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Overdue</span>
+                        <span class="stat-icon red">!</span>
+                    </div>
+                    <h2 id="overdueTasks">0</h2>
+                    <p>Needs your attention</p>
+                </article>
+
+            </section>
+
+
+            <!-- Main Dashboard Grid -->
+            <div class="content-grid">
+
+
+                <!-- Right Column -->
+                <div class="right-column">
+
+                    <section class="panel progress-panel">
+                        <div class="section-heading">
+                            <div>
+                                <h2>Daily Progress</h2>
+                                <p>Your daily achievement</p>
+                            </div>
+                        </div>
+
+                        <div class="progress-circle"
+                        role="progressbar"
+                        aria-label="Daily task completion"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="20">
+                            <div class="progress-inner">
+                                <h2>68%</h2>
+                                <p>Completed</p>
+                            </div>
+                        </div>
+
+                        <p class="progress-message">
+                            Great work! You're making good progress today.
+                        </p>
+
+                        <div class="progress-details">
+                            <span>Completed tasks</span>
+                            <strong>16 / 24</strong>
+                        </div>
+                    </section>
+
+
+                    
+<section class="panel tasks-panel">
+
+    <div class="section-heading">
+        <div>
+            <h2>Today's Tasks</h2>
+            <p>Keep moving forward, one task at a time.</p>
+        </div>
+    </div>
+
+    <!-- Add Task Form -->
+    <form id="taskForm" class="task-form">
+    <label for="taskInput" class="visually-hidden">Enter a new task</label>
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a new task..."
+        required
+    />
+    <button type="submit">Add Task</button>
+</form>
+
+    <!-- Search Tasks -->
+    <label for="searchInput" class="visually-hidden">Search tasks</label>
+<input
+    type="text"
+    id="searchInput"
+    placeholder="Search tasks..."
+    class="search-input"
+/>
+
+    <!-- Task List -->
+    <div id="taskList" aria-live="polite"></div>
+<p id="taskMessage" class="task-message" role="status" aria-live="polite"></p>
+
+</section>
+
+
+                </div>
+            </div>
+
+
+            <!-- Bottom Section -->
+            <section class="panel weekly-panel">
+                <div class="section-heading">
+                    <div>
+                        <h2>Weekly Overview</h2>
+                        <p>Your productivity at a glance</p>
+                    </div>
+                    <span class="week-label">This Week</span>
+                </div>
+
+                <div class="weekly-progress">
+                    <div class="day-progress">
+                        <span>Mon</span>
+                        <div class="bar"><div style="height: 65%"></div></div>
+                        <small>65%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Tue</span>
+                        <div class="bar"><div style="height: 85%"></div></div>
+                        <small>85%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Wed</span>
+                        <div class="bar"><div style="height: 50%"></div></div>
+                        <small>50%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Thu</span>
+                        <div class="bar"><div style="height: 75%"></div></div>
+                        <small>75%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Fri</span>
+                        <div class="bar"><div style="height: 90%"></div></div>
+                        <small>90%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Sat</span>
+                        <div class="bar"><div style="height: 35%"></div></div>
+                        <small>35%</small>
+                    </div>
+
+                    <div class="day-progress">
+                        <span>Sun</span>
+                        <div class="bar"><div style="height: 20%"></div></div>
+                        <small>20%</small>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                Made with care by FocusFlow. Stay productive, stay inspired.
+            </footer>
+
+        </main>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
